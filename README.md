@@ -11,8 +11,8 @@ Then, run these tests as follows:
 
 2. Make the test script executable and run
 
-   `chmod +x run-tests.sh`
+   `chmod +x run-tests.zsh`
 
-   `./run-tests.sh`
+   `./run-tests.zsh`
 
 This might take a while (15 - 30 minutes). The results will be written to a new file called `run_results.txt`.
