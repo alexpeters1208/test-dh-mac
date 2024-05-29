@@ -28,7 +28,7 @@ source "$python_version-venv/bin/activate" || { echo "Failed to activate Python 
 # Run the test
 {
     echo "from deephaven_server import Server" > test_script.py
-    echo "s = Server(port=10000, jvm_args=['-Xmx4g'])" >> test_script.py
+    echo "s = Server()" >> test_script.py
     echo "s.start()" >> test_script.py
     echo "s.shutdown()" >> test_script.py
     timeout 15 python3 test_script.py
