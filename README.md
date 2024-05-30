@@ -3,13 +3,24 @@ This test suite requires [`SDKMAN!`](https://sdkman.io/install) for managing JDK
 
 Then, run these tests as follows:
 
-1. Clone and navigate this repo
+1. Add the following lines to your `.zshrc` profile:
+
+   ```
+   export PYENV_ROOT="$HOME/.pyenv"
+   export PATH="$PYENV_ROOT/shims:$PATH"
+
+   if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+   ```
+
+   _You must then restart your shell for these changes to take effect._
+
+2. Clone and navigate this repo
    
    `git clone https://github.com/alexpeters1208/test-dh-mac.git`
 
    `cd test-dh-mac`
 
-2. Make the test script executable and run
+3. Make the test script executable and run
 
    `chmod +x run-tests.zsh`
 
