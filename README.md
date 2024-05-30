@@ -1,4 +1,4 @@
-This test suite requires [`SDKMAN!`](https://sdkman.io/install) for managing JDK versions, and [`pyenv`](https://github.com/pyenv/pyenv) for managing Python versions. Follow the installation guides at those links for MacOS to get started - you should [install `pyenv` with Homebrew](https://github.com/pyenv/pyenv?tab=readme-ov-file#homebrew-in-macos).
+This test suite requires [`SDKMAN!`](https://sdkman.io/install) for managing JDK versions, and [`pyenv`](https://github.com/pyenv/pyenv) for managing Python versions. Follow the installation guides at those links for MacOS to get started - you should [install `pyenv` with Homebrew](https://github.com/pyenv/pyenv?tab=readme-ov-file#homebrew-in-macos). You must also have Python installed. Test your Python installation by running `python`, which will ensure that the command can be found.
 
 
 Then, run these tests as follows:
