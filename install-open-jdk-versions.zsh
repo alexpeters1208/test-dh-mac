@@ -1,5 +1,8 @@
 #!/bin/zsh
 
+# Initialize SDKMAN
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
 # Parse arguments
 if [[ $# -lt 1 ]]; then
     echo "Usage: $0 <versions-file>"
@@ -42,5 +45,4 @@ while IFS= read -r version; do
 done < $VERSIONS_FILE
 
 echo "Java installation and linking completed."
-
 
