@@ -23,7 +23,7 @@ chmod +x create-venvs.zsh
 ./create-venvs.zsh --jdk-versions open-jdk-versions.txt --jdk-versions sdk-jdk-versions.txt --python-versions python-versions.txt
 
 # Install Deephaven in each venv for each JDK version (takes a long, long time)
-chmod +x install-deephaven.zsh --jdk-versions open-jdk-versions.txt sdk-jdk-versions.txt --python-versions python-versions.txt
+chmod +x install-deephaven.zsh
 ./install-deephaven.zsh --jdk-versions open-jdk-versions.txt --jdk-versions sdk-jdk-versions.txt --python-versions python-versions.txt
 
 # Test every Deephaven installation and record results to `run_results.txt`
